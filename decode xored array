@@ -1,0 +1,7 @@
+#leetcode1720
+   arr=[first]
+        for i in range(len(encoded)):
+            arr.append(encoded[i]^arr[-1])
+        return arr
+
+        
