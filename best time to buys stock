@@ -1,0 +1,13 @@
+#leetcode121
+pr=0
+        minbp=prices[0]
+        for i in range(1,len(prices)):
+            if prices[i] < minbp:
+                minbp=prices[i]
+            elif prices[i]-minbp>pr:
+
+        
+                pr=prices[i]-minbp
+
+        return pr
+        
