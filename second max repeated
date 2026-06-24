@@ -1,0 +1,21 @@
+#dictioary
+#max repeated num and no times,secodhighest frequency
+l=[1,2,2,3,2,3,1,5,6]
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+freq1=0
+freq2=0
+num1=0
+num2=0
+for i in d:
+    if d[i]>freq1:
+        freq2=freq2
+        num2=num1
+        freq1=d[i]
+        num1=i
+print(d)
+print(num)
