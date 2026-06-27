@@ -1,0 +1,8 @@
+ef fun(num):
+    if num==0:
+        return
+    print(num,end=" ")
+    fun(num-1)
+num=int(input("enter: "))
+fun(num)
+        
