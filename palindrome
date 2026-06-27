@@ -1,0 +1,7 @@
+#palindrome
+s="malayalam"
+res=s[::-1]#slicing
+if s==res:
+    print("palindrome")
+else:
+    print("not")
