@@ -1,0 +1,9 @@
+ arr=[0]*26
+        for ch in s:
+            arr[ord(ch)-97]+=1
+        for ch in t:
+            arr[ord(ch)-97]-=1
+        for i in arr:
+            if i!=0:
+                return False
+        return True
