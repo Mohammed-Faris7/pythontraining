@@ -1,0 +1,19 @@
+a=[]
+        sent=sentence.split()
+        for i in sent:
+            if i[0] in 'aeiouAEIOU':
+                a.append(i+'ma')
+            else:
+                alpha=i[0]
+                temp=i[1:]
+                a.append(temp+alpha+'ma')
+        modified_sentence=[]
+        cnt=1
+        for i in a:
+            modified_word=i+cnt*'a'
+            cnt+=1
+            modified_sentence.append(modified_word)
+        final=" ".join(modified_sentence)
+        return final
+        
+        
