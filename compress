@@ -1,0 +1,13 @@
+#compress the string if length of compressed is less
+s="aaaabbbccc"
+c=1
+res=""
+for i in range(len(s)-1):
+    if s[i]==s[i+1]:
+        c+=1
+    else:
+        res+=s[i]+str(c)
+        c=1
+res+=s[-1]+str(c)
+if len(res)<len(s):
+    print(res)
