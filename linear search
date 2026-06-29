@@ -1,0 +1,10 @@
+#search(linear search)
+arr=[7,3,4,2,6,12]
+key=12
+found=False
+for i in range(len(arr)):
+   if arr[i]==key:
+      print("element found at index",i)
+      found=True
+if not found:
+    print("element not found")
