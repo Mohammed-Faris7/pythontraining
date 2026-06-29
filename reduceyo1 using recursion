@@ -1,0 +1,13 @@
+reduce to 1 using recursion
+#reduce to 1
+num =int(input("enter: "))
+def reduce(num):
+    if num==1:
+        return 0
+    elif num%2==0:
+        return 1+reduce(num//2)
+    else:
+        minus=reduce(num-1)
+        plus=reduce(num+1)
+        return 1+min(minus,plus)
+print(reduce(num))
