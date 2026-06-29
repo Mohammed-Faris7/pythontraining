@@ -1,0 +1,11 @@
+a=int(input("enter a number: "))
+b=int(input("enter a number: "))
+
+def powerof_num(a,b):
+    if b==0:
+        return 1
+    
+    return a*powerof_num(a,b-1)
+
+print(powerof_num(a,b)) 
+                
